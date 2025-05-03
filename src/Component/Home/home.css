@@ -1,0 +1,166 @@
+.HeaderHome {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/BG6.jpg');
+  background-size: cover;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+}
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32,28,28, 0.5);
+}
+.Opt1 {
+  width: 605px; /* Adjust width */
+  height: auto; /* Keep aspect ratio */
+  padding: 30px;
+}
+/* SlideShow Container */
+.slideShow {
+  background-color: white;
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+/* Slide Box Styling */
+.slideBox {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(32,28,28, 0.1);
+  max-width: 1200px;
+  width: 100%;
+}
+.slide1Container {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* space between image and details */
+  padding: 20px;
+  flex-wrap: wrap; /* in case of small screens */
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide1Image {
+  flex: 0 0 auto; /* Prevents the image from growing */
+}
+.slide1Img {
+  width: 500px;
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(32,28,28, 0.1);
+}
+.slide1Detail {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slide1Detail h1, .slide1Detail p {
+  margin: 10px 0;
+  text-align: justify;
+}
+/*Section*/
+.NextSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  position: relative; /* Required for absolutely positioning background overlay */
+  background-image: url('../../assets/HomeSection.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom -10px left;
+  background-size: 530px auto; /* Adjust size as needed */
+}
+.HomeTechLife{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-right: -390px; /* Pushes content to the right */
+}
+/* Explicit order */
+.HomeLifeContainer {
+  order: 1;
+}
+.HomeTechContainer {
+  order: 2;
+}
+.HomeTechContainer, .HomeLifeContainer {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* limit max width */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(32,28,28, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.HomeTechImg, .HomelifeImg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+.catTitle {
+  text-align: center;
+}
+.HomeitemImg {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.slide1Title, .catTitle{
+  font-family: 'Poppins';
+}
+.slide1Content, .slide1Point, .footer-content{
+  font-family: 'Open Sans';
+}
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-left {
+  display: flex;
+  gap: 20px; /* spacing between Contact Us and About Us */
+}
+.footer-left p, .footer-right p {
+  margin: 0;
+  font-size: 14px;
+}
