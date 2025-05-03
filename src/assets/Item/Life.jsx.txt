@@ -1,0 +1,119 @@
+import React, { useState } from 'react';
+import NavBar from '../NavBar/NavBar'
+import OptLogo from '../../assets/logo2.png'
+import item1 from '../../assets/Item/Kurma.png'
+import item2 from '../../assets/Item/Pizza.png'
+import item3 from '../../assets/Item/NoseTrim.png'
+import item4 from '../../assets/Item/ToteBag.png'
+import './life.css'
+
+const life = () => {
+
+
+  return (
+    <div className='LifeContainer'>
+      <div className='HeaderLife'>
+        <img src={OptLogo} alt="" className='Opt1'/>
+      </div>
+      <NavBar/>
+      <div>
+        <h1 className='lifeTitle'>LIFESTYLE REWARD VOUCHERS</h1>
+        <div className='lifeContent'>
+          {/* Item 1 */}
+          <div className='Box1'>
+            <img src={item1} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Kurma Set</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 2 */}
+          <div className='Box2'>
+            <img src={item2} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Pizza Hut Coupon</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 3 */}
+          <div className='Box3'>
+            <img src={item3} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Nose Hair Trimmer Set</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 4 */}
+          <div className='Box4'>
+            <img src={item4} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Tote Bag Voucher</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 1 */}
+          <div className='Box1'>
+            <img src={item1} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Kurma Set</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 2 */}
+          <div className='Box2'>
+            <img src={item2} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Pizza Hut Coupon</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 3 */}
+          <div className='Box3'>
+            <img src={item3} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Nose Hair Trimmer Set</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+          {/* Item 4 */}
+          <div className='Box4'>
+            <img src={item4} alt="" className='itemImg'/>
+            <div className='itemText'>
+              <h2 className='textTitle'>Tote Bag Voucher</h2>
+              <h5 className='textContent'>Enjoy a box of premium Yusuf Taiyob Kurma, perfect for gifting or personal indulgence.</h5>
+              <h5 className='textContent'>Redeem this delicious treat with just 1000 points from your lifestyle rewards!</h5>
+              <h5 className='textPoint'>Points Needed: 1000pts</h5>
+            </div>
+            <button className='itemBtn'>View</button>
+          </div>
+        </div>
+      </div>
+      <footer className="footer">
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+      </footer>
+    </div>
+  )
+}
+
+export default life
